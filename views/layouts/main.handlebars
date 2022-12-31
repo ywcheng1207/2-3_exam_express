@@ -1,0 +1,30 @@
+<!-- ./views/layouts/main.handlebars -->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <!-- link css files here -->
+    <link rel="stylesheet" href="/stylesheets/bootstrap.css" />
+  </head>
+  <body>
+    <!-- navigation -->
+    <nav class="navbar navbar-dark bg-dark d-flex flex-nowrap">
+      <div class="container">
+        <a class="navbar-brand" href="/">回到首頁</a>
+      </div>
+      <div class="container d-flex justify-content-end">
+        <a class="navbar-brand" href="/about">About</a>
+        <a class="navbar-brand" href="/portfolio">Portfolio</a>
+        <a class="navbar-brand" href="/contact">Contact</a>
+      </div>
+    </nav>
+    <!-- partial templates will replace the part of "body" here -->
+    {{{body}}}
+    <!-- include javascript files here -->
+    <script src="/javascripts/popper.js"></script>
+    <script src="/javascripts/bootstrap.js"></script>
+  </body>
+</html>
